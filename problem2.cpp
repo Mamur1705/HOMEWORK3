@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     int t, n, counter_t=0;
     cin>>t;
-    while(1) {
+    while(true) {
         cin>>n;
         int num=n;
         int  counter_d=0;
