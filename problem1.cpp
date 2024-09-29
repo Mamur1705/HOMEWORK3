@@ -8,7 +8,10 @@ int main() {
         for(int j = num; j >= i; j--) {
             cout<<num-j+1;
         }
-        for(int k=1; k<=(2*(num+i-6)); k++) {
+        for(int k=1; k<i; k++) {
+            cout<<" ";
+        }
+        for(int m=1; m<i; m++) {
             cout<<" ";
         }
         for(int l=num-i+1; l>=1; l--) {
