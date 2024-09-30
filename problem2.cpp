@@ -3,6 +3,7 @@ using namespace std;
 
 int main() {
     int t, n, counter_t=0;
+    string result = "";
     cin>>t;
     while(true) {
         cin>>n;
@@ -13,17 +14,18 @@ int main() {
             counter_d++;
         }
         for(int i=1; i<=counter_d; i++) {
-            cout<<n%10;
+            result+=to_string(n%10);
             if(i<counter_d) {
-                cout<<" ";
+                result+=" ";
             }
             n=n/10;
         }
-        cout<<endl;
+        result+="\n";
         counter_t++;
         if(counter_t==t) {
             break;
         }
     }
+    cout<<result;
     return 0;
 }
