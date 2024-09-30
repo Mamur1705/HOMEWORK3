@@ -14,10 +14,7 @@ int main() {
             counter_d++;
         }
         for(int i=1; i<=counter_d; i++) {
-            result+=to_string(n%10);
-            if(i<counter_d) {
-                result+=" ";
-            }
+            result+=to_string(n%10)+" ";
             n=n/10;
         }
         result+="\n";
